@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #D81324;
+    --primary: #0abab5;
     --secondary: #0B2154;
     --light: #F2F2F2;
     --dark: #111111;
@@ -179,13 +179,37 @@
 }
 
 .page-header {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(135deg, #0B2154 0%, #0abab5 70%, #0B2154 100%);
+    color: white;
+    padding: 2px 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 150%;
+    background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 60%);
+    animation: rotateBackground 40s linear infinite;
+    z-index: 0;
+}
+
+@keyframes rotateBackground {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .page-header-inner {
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, 0);
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -380,34 +404,4 @@
     margin-right: 0;
     padding-right: 0;
     border-right: none;
-}
-
-/* Modern Carousel Background */
-#header-carousel .carousel-item {
-    position: relative;
-    background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
-    min-height: 600px;
-}
-
-#header-carousel .carousel-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: 
-        linear-gradient(45deg, transparent 48%, var(--light) 48%, var(--light) 52%, transparent 52%),
-        linear-gradient(-45deg, transparent 48%, var(--light) 48%, var(--light) 52%, transparent 52%);
-    background-size: 60px 60px;
-    opacity: 0.1;
-}
-
-#header-carousel .carousel-item img {
-    display: none;
-}
-
-#header-carousel .carousel-caption {
-    position: relative;
-    z-index: 1;
 }

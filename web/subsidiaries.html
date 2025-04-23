@@ -30,6 +30,23 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        /* Add some basic styling for the card image */
+        .card-img-top-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px; /* Adjust height as needed */
+            background-color: #f8f9fa; /* Light background for the frame */
+            border-bottom: 1px solid #dee2e6; /* Optional border */
+            padding: 1rem; /* Add padding around the logo */
+        }
+        .card-img-top-container img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain; /* Ensure the logo fits well */
+        }
+    </style>
 </head>
 
 <body>
@@ -37,8 +54,8 @@
     <div data-component="header"></div>
 
     <!-- Page Header Start -->
-    <div class="container-fluid page-header mb-5 p-0" style="background-image: url(img/carousel-bg-1.jpg);">
-        <div class="container-fluid page-header-inner py-5">
+    <div class="container-fluid page-header p-0">
+        <div class="container-fluid page-header-inner py-1">
             <div class="container text-center">
                 <h1 class="display-3 text-white mb-3 animated slideInDown">Our Subsidiaries</h1>
                 <nav aria-label="breadcrumb">
@@ -59,102 +76,85 @@
                 <h6 class="text-primary text-uppercase">// Our Companies //</h6>
                 <h1 class="mb-5">ICW Group of Companies</h1>
             </div>
-            <div class="row g-4">
+            <div class="row g-4 justify-content-center">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="https://placehold.co/400x300/cccccc/666666?text=Patients+Choice" alt="Patients Choice Home Health">
-                            <div class="service-overlay">
-                                <a class="btn btn-light" href="#">Learn More</a>
-                            </div>
+                    <div class="card h-100">
+                        <div class="card-img-top-container">
+                             <a href="https://patients-choice.com/" target="_blank" rel="noopener noreferrer">
+                                <img src="img/PClogo.png" alt="Patients Choice Home Health Logo">
+                             </a>
                         </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-3">Patients Choice Home Health</h5>
-                            <p>Providing skilled nursing, therapy, and chronic condition management in the comfort of patients' homes.</p>
+                        <div class="card-body text-center">
+                             <a href="https://patients-choice.com/" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-dark">
+                                <h5 class="card-title">Patients Choice Home Health</h5>
+                             </a>
+                            <p class="card-text">Providing skilled nursing, therapy, and chronic condition management in the comfort of patients' homes.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="https://placehold.co/400x300/cccccc/666666?text=Success+Care" alt="Success Care Clinics">
-                            <div class="service-overlay">
-                                <a class="btn btn-light" href="#">Learn More</a>
-                            </div>
+                    <div class="card h-100">
+                         <div class="card-img-top-container">
+                            <img src="https://placehold.co/400x300/0abab5/ffffff?text=Success+Care" alt="Success Care Clinics">
                         </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-3">Success Care Clinics</h5>
-                            <p>Delivering on-site clinical services and wellness programs for employers, schools, and communities.</p>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Success Care Clinics</h5>
+                            <p class="card-text">Delivering on-site clinical services and wellness programs for employers, schools, and communities.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="https://placehold.co/400x300/cccccc/666666?text=Prestige+Research" alt="Prestige Clinical Research">
-                            <div class="service-overlay">
-                                <a class="btn btn-light" href="#">Learn More</a>
-                            </div>
+                    <div class="card h-100">
+                         <div class="card-img-top-container">
+                            <img src="https://placehold.co/400x300/0abab5/ffffff?text=Prestige+Research" alt="Prestige Clinical Research">
                         </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-3">Prestige Clinical Research</h5>
-                            <p>Conducting decentralized and hybrid clinical trials with a focus on inclusive recruitment.</p>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Prestige Clinical Research</h5>
+                            <p class="card-text">Conducting decentralized and hybrid clinical trials with a focus on inclusive recruitment.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="service-item">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="https://placehold.co/400x300/cccccc/666666?text=ICW+Engineering" alt="ICW Engineering">
-                            <div class="service-overlay">
-                                <a class="btn btn-light" href="#">Learn More</a>
-                            </div>
+                    <div class="card h-100">
+                         <div class="card-img-top-container">
+                            <img src="https://placehold.co/400x300/0abab5/ffffff?text=ICW+Engineering" alt="ICW Engineering">
                         </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-3">ICW Engineering</h5>
-                            <p>Designing and building modular healthcare infrastructure and mobile clinic solutions.</p>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">ICW Engineering</h5>
+                            <p class="card-text">Designing and building modular healthcare infrastructure and mobile clinic solutions.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
-                    <div class="service-item">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="https://placehold.co/400x300/cccccc/666666?text=ICW+ALOYD" alt="ICW ALOYD LLC">
-                            <div class="service-overlay">
-                                <a class="btn btn-light" href="#">Learn More</a>
-                            </div>
+                    <div class="card h-100">
+                        <div class="card-img-top-container">
+                            <img src="https://placehold.co/400x300/0abab5/ffffff?text=ICW+ALOYD" alt="ICW ALOYD LLC">
                         </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-3">ICW ALOYD LLC</h5>
-                            <p>Specializing in deployable healthcare infrastructure and emergency response solutions.</p>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">ICW ALOYD LLC</h5>
+                            <p class="card-text">Specializing in deployable healthcare infrastructure and emergency response solutions.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1.1s">
-                    <div class="service-item">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="https://placehold.co/400x300/cccccc/666666?text=MedForce" alt="MedForce">
-                            <div class="service-overlay">
-                                <a class="btn btn-light" href="#">Learn More</a>
-                            </div>
+                     <div class="card h-100">
+                         <div class="card-img-top-container">
+                            <img src="https://placehold.co/400x300/0abab5/ffffff?text=MedForce" alt="MedForce">
                         </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-3">MedForce</h5>
-                            <p>Providing healthcare staffing solutions and workforce development programs.</p>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">MedForce</h5>
+                            <p class="card-text">Providing healthcare staffing solutions and workforce development programs.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1.3s">
-                    <div class="service-item">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="https://placehold.co/400x300/cccccc/666666?text=Prestige+Providers" alt="Prestige Providers">
-                            <div class="service-overlay">
-                                <a class="btn btn-light" href="#">Learn More</a>
-                            </div>
+                    <div class="card h-100">
+                         <div class="card-img-top-container">
+                            <img src="https://placehold.co/400x300/0abab5/ffffff?text=Prestige+Providers" alt="Prestige Providers">
                         </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-3">Prestige Providers</h5>
-                            <p>Offering environmental health services including mold remediation and emergency response.</p>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Prestige Providers</h5>
+                            <p class="card-text">Offering environmental health services including mold remediation and emergency response.</p>
                         </div>
                     </div>
                 </div>

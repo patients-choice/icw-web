@@ -338,7 +338,7 @@
 
 /*** Footer ***/
 .footer {
-    background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url(../img/carousel-bg-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(10, 186, 181, .6), rgba(11, 33, 84)), url('../img/bird-bg.png') center center;
     background-size: cover;
 }
 

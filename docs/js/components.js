@@ -53,9 +53,9 @@ document.addEventListener('DOMContentLoaded', function() {
                         <a href="careers.html" class="dropdown-item">Careers</a>
                     </div>
                 </div>
-                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                <a href="contact.html" class="nav-item nav-link d-lg-none">Contact Us</a>
             </div>
-            <a href="contact.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Get In Touch<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="contact.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Contact Us<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->

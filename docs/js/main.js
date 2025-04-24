@@ -3,11 +3,19 @@
 
     // Spinner
     var spinner = function () {
+        // Hide spinner when page is fully loaded
+        $(window).on('load', function() {
+            if ($('#spinner').length > 0) {
+                $('#spinner').removeClass('show');
+            }
+        });
+        
+        // Also hide spinner after a maximum timeout (5 seconds) as a fallback
         setTimeout(function () {
             if ($('#spinner').length > 0) {
                 $('#spinner').removeClass('show');
             }
-        }, 1);
+        }, 5000);
     };
     spinner();
     
@@ -85,26 +93,33 @@
 
 
     // Testimonials carousel
-    $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1000,
-        center: true,
-        margin: 25,
-        dots: true,
-        loop: true,
-        nav : false,
-        responsive: {
-            0:{
-                items:1
+    if (document.querySelector('.testimonial-carousel')) {
+        new Swiper('.testimonial-carousel', {
+            slidesPerView: 1,
+            spaceBetween: 25,
+            centeredSlides: true,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
             },
-            768:{
-                items:2
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
             },
-            992:{
-                items:3
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                992: {
+                    slidesPerView: 3,
+                }
             }
-        }
-    });
+        });
+    }
     
 })(jQuery);
 

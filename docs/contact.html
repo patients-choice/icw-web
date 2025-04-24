@@ -7,6 +7,8 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="ICW contact, healthcare contact, wellness services" name="keywords">
     <meta content="Get in touch with Innovative Centers for Wellness (ICW) for healthcare and infrastructure solutions." name="description">
+    <meta name="google" content="notranslate">
+    <meta name="google" content="nositelinkssearchbox">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -87,7 +89,8 @@
                     <iframe class="position-relative rounded w-100 h-100"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6492.4042024813925!2d-80.3142598!3d25.792390400000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b99917bcca21%3A0x99cb6df90e320297!2s7205%20NW%2019th%20St%20%23201%2C%20Miami%2C%20FL%2033126!5e1!3m2!1sen!2sus!4v1745381666609!5m2!1sen!2sus"
                         style="min-height: 350px; border:0;" allowfullscreen="" loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        referrerpolicy="no-referrer-when-downgrade"
+                        sandbox="allow-scripts allow-same-origin"></iframe>
                 </div>
                 <div class="col-md-6">
                     <div class="wow fadeInUp" data-wow-delay="0.2s">
@@ -143,6 +146,7 @@
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/passive-events.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
@@ -157,6 +161,22 @@
     <script src="js/main.js"></script>
     <!-- Components Javascript -->
     <script src="js/components.js"></script>
+
+    <!-- Initialize Owl Carousel with passive events -->
+    <script>
+        $(document).ready(function() {
+            $('.owl-carousel').owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 10,
+                nav: true,
+                touchDrag: true,
+                mouseDrag: true,
+                touchStart: { passive: true },
+                touchMove: { passive: true }
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -149,7 +149,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, 0);
     z-index: 1;
 }
 
@@ -404,4 +404,29 @@
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+}
+
+/* Carousel header style for animated gradient background */
+.carousel-header-style {
+    background: linear-gradient(135deg, #0B2154 0%, #0abab5 70%, #0B2154 100%);
+    color: white;
+    position: relative;
+    overflow: hidden;
+    z-index: 1000;
+}
+.carousel-header-style::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 150%;
+    background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 60%);
+    animation: rotateBackground 40s linear infinite;
+    z-index: 0;
+}
+.carousel-header-style .carousel-caption,
+.carousel-header-style .carousel-caption * {
+    position: relative;
+    z-index: 1;
 }

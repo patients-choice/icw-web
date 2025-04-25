@@ -219,10 +219,8 @@
 
 /*** Facts ***/
 .fact {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/carousel-bg-1.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/bird-head.png) center center no-repeat;
+    background-size: contain;
 }
 
 
@@ -243,7 +241,7 @@
 
 /*** Booking ***/
 .booking {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/carousel-bg-2.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/bird-bg-left.png) center center no-repeat;
     background-size: cover;
 }
 

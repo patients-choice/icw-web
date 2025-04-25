@@ -20,9 +20,33 @@
     spinner();
     
     
-    // Initiate the wowjs
-    new WOW().init();
+    // Initiate the wowjs with optimized settings
+    new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        offset: 50,          // Trigger animations when element is 50px from viewport
+        mobile: true,        // Enable animations on mobile devices
+        live: true,          // Look for new WOW elements
+        callback: function(box) {
+            // Callback when animation completes
+        },
+        scrollContainer: null // Optional scroll container selector
+    }).init();
 
+    // Add custom animation durations
+    document.addEventListener('DOMContentLoaded', function() {
+        const elements = document.querySelectorAll('.wow');
+        elements.forEach(element => {
+            // Faster animations for service boxes
+            if (element.closest('.service')) {
+                element.style.animationDuration = '0.5s';
+            }
+            // Slightly faster animations for other elements
+            else {
+                element.style.animationDuration = '0.8s';
+            }
+        });
+    });
 
     // Sticky Navbar
     $(window).scroll(function () {

@@ -40,19 +40,22 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link">Home</a>
-                <a href="about.html" class="nav-item nav-link">About Us</a>
-                <a href="service.html" class="nav-item nav-link">Services</a>
-                <a href="team.html" class="nav-item nav-link">Leadership</a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
+                    <a href="about.html" class="nav-link dropdown-toggle-split">About ICW</a>
                     <div class="dropdown-menu fade-up m-0">
-                        <a href="subsidiaries.html" class="dropdown-item">Subsidiaries</a>
-                        <a href="research.html" class="dropdown-item">Clinical Research</a>
-                        <a href="infrastructure.html" class="dropdown-item">Infrastructure & Engineering</a>
+                        <a href="team.html" class="dropdown-item">Leadership</a>
                         <a href="news.html" class="dropdown-item">News & Impact</a>
                         <a href="careers.html" class="dropdown-item">Careers</a>
                     </div>
                 </div>
+                <div class="nav-item dropdown">
+                    <a href="service.html" class="nav-link dropdown-toggle-split">Services</a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <a href="research.html" class="dropdown-item">Clinical Research</a>
+                        <a href="infrastructure.html" class="dropdown-item">Infrastructure & Engineering</a>
+                    </div>
+                </div>
+                <a href="subsidiaries.html" class="nav-item nav-link">Subsidiaries</a>
                 <a href="contact.html" class="nav-item nav-link d-lg-none">Contact Us</a>
             </div>
             <a href="contact.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Contact Us<i class="fa fa-arrow-right ms-3"></i></a>
@@ -152,19 +155,17 @@ document.addEventListener('DOMContentLoaded', function() {
 function initializeNavigation() {
     // Update active navigation link based on current page
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    const navLinks = document.querySelectorAll('.navbar-nav .nav-item .nav-link');
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link:not(.dropdown-toggle-split)');
     const dropdownItems = document.querySelectorAll('.dropdown-menu .dropdown-item');
+    const parentLinks = document.querySelectorAll('.nav-link.dropdown-toggle-split');
     
     // Remove active class from all links
     navLinks.forEach(link => link.classList.remove('active'));
     dropdownItems.forEach(item => item.classList.remove('active'));
-    
-    // Remove active class from dropdown toggle
-    const dropdownToggles = document.querySelectorAll('.nav-link.dropdown-toggle');
-    dropdownToggles.forEach(toggle => toggle.classList.remove('active'));
+    parentLinks.forEach(link => link.classList.remove('active'));
     
     // Add active class to current page link
-    const allLinks = [...navLinks, ...dropdownItems];
+    const allLinks = [...navLinks, ...dropdownItems, ...parentLinks];
     allLinks.forEach(link => {
         const href = link.getAttribute('href');
         if (href === currentPage) {
@@ -173,10 +174,32 @@ function initializeNavigation() {
             if (link.classList.contains('dropdown-item')) {
                 const dropdownParent = link.closest('.dropdown');
                 if (dropdownParent) {
-                    const toggle = dropdownParent.querySelector('.dropdown-toggle');
+                    const toggle = dropdownParent.querySelector('.dropdown-toggle-split');
                     if (toggle) toggle.classList.add('active');
                 }
             }
         }
     });
+
+    // Handle mobile menu behavior
+    function handleMobileMenu() {
+        const isMobile = window.innerWidth < 992;
+        const dropdownMenus = document.querySelectorAll('.dropdown-menu');
+        
+        if (isMobile) {
+            dropdownMenus.forEach(menu => {
+                menu.style.display = 'block';
+            });
+        } else {
+            dropdownMenus.forEach(menu => {
+                menu.style.removeProperty('display');
+            });
+        }
+    }
+
+    // Initial call
+    handleMobileMenu();
+
+    // Handle resize events
+    window.addEventListener('resize', handleMobileMenu);
 } 

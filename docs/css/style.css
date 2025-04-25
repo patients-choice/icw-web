@@ -101,11 +101,58 @@
     .navbar-light .navbar-nav .nav-link  {
         margin-right: 0;
         padding: 10px 0;
+        text-align: right;
     }
 
     .navbar-light .navbar-nav {
         border-top: 1px solid #EEEEEE;
+        margin-left: auto !important;
+        width: 100%;
+        padding-right: 2rem !important;
+        padding-left: 0 !important;
+        background: white;
     }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: auto;
+        background: transparent;
+    }
+
+    .dropdown-menu {
+        border: none;
+        padding-left: 0;
+        padding-right: 1rem;
+        display: block !important;
+        background: transparent;
+    }
+
+    .dropdown-item {
+        text-align: right;
+        padding-right: 0;
+        background: white;
+    }
+
+    .navbar-nav .dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        box-shadow: none;
+    }
+
+    /* Add white background only behind menu items */
+    .navbar-nav .nav-item {
+        background: white;
+        margin-bottom: 1px;
+        padding: 0 1rem;
+    }
+
+
 }
 
 .navbar-light .navbar-brand,
@@ -131,14 +178,24 @@
         top: 150%;
         opacity: 0;
         visibility: hidden;
-        transition: .5s;
+        transition: opacity 0.3s ease, visibility 0.3s ease, top 0.3s ease;
+        transition-delay: 0.15s;
     }
 
     .navbar .nav-item:hover .dropdown-menu {
         top: 100%;
         visibility: visible;
-        transition: .5s;
         opacity: 1;
+    }
+
+    .dropdown-toggle-split {
+        padding-right: 1rem !important;
+    }
+
+    .dropdown-menu {
+        min-width: 200px;
+        border-radius: 0;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
     }
 }
 
@@ -219,6 +276,27 @@
 
 .breadcrumb-item + .breadcrumb-item::before {
     color: var(--light);
+}
+
+.breadcrumb-item a {
+    color: var(--light);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.breadcrumb-item a:hover {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.breadcrumb-item a::after {
+    content: none;
+}
+
+.breadcrumb-item.active {
+    color: var(--light);
+    opacity: 0.8;
 }
 
 
@@ -432,4 +510,13 @@
 .carousel-header-style .carousel-caption * {
     position: relative;
     z-index: 1;
+}
+
+.navbar .dropdown-toggle-split::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 8px;
 }

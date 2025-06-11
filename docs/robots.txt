@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Allow: /img/
+Allow: /css/
+Allow: /js/
+Allow: /lib/
+
+# Disallow admin or private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /backup/
+
+# Sitemap location
+Sitemap: https://icw.com/sitemap.xml 

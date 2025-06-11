@@ -9,7 +9,10 @@
     <meta content="ICW delivers innovative healthcare solutions through mobile clinics, wellness centers, and infrastructure development, serving communities where they need it most." name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon_io/site.webmanifest">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -168,7 +171,7 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="position-relative overflow-hidden h-100" style="min-height: 400px;">
                         <img class="position-absolute w-100 h-100 pt-5 pe-5" src="img/stock/side-view-thoughtful-doctor-woman-protective-wear.jpg" alt="ICW team discussion" style="object-fit: cover;">
-                        <img class="position-absolute top-0 end-0 bg-white ps-2 pb-2" src="https://placehold.co/200x200/0abab5/ffffff?text=About+ICW" alt="ICW team working" style="width: 200px; height: 200px;">
+                        <img class="position-absolute top-0 end-0 bg-white ps-2 pb-2" src="img/logo-box-color-bg.png" alt="ICW team working" style="width: 200px; height: 200px;">
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -396,30 +399,30 @@
                 <div class="col-lg-6">
                     <div class="bg-primary h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn" data-wow-delay="0.6s">
                         <h1 class="text-white mb-4">Request Information</h1>
-                        <form>
+                        <form action="https://usebasin.com/f/068aec676224" method="POST" enctype="multipart/form-data" id="form">
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
+                                    <input type="text" class="form-control border-0" name="name" placeholder="Your Name" style="height: 55px;" required>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
+                                    <input type="email" class="form-control border-0" name="email" placeholder="Your Email" style="height: 55px;" required>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <select class="form-select border-0" style="height: 55px;">
-                                        <option selected>Select Service</option>
-                                        <option value="1">On-Site Clinical Services</option>
-                                        <option value="2">Modular Infrastructure</option>
-                                        <option value="3">Clinical Research</option>
-                                        <option value="4">Home Healthcare</option>
-                                        <option value="5">Staffing & Workforce</option>
-                                        <option value="6">Environmental Services</option>
+                                    <select class="form-select border-0" name="subject" style="height: 55px;" required>
+                                        <option value="">Select Service</option>
+                                        <option value="clinical">Clinical Services</option>
+                                        <option value="infrastructure">Modular Infrastructure</option>
+                                        <option value="research">Clinical Research</option>
+                                        <option value="homecare">Home Healthcare</option>
+                                        <option value="staffing">Staffing Solutions</option>
+                                        <option value="other">Other</option>
                                     </select>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Organization Name" style="height: 55px;">
+                                    <input type="text" class="form-control border-0" name="organization" placeholder="Organization Name" style="height: 55px;">
                                 </div>
                                 <div class="col-12">
-                                    <textarea class="form-control border-0" placeholder="Tell us about your needs"></textarea>
+                                    <textarea class="form-control border-0" name="message" placeholder="Tell us about your needs" required></textarea>
                                 </div>
                                 <div class="col-12">
                                     <button class="btn btn-secondary w-100 py-3" type="submit">Submit Request</button>

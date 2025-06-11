@@ -1,9 +1,55 @@
 /********** Template CSS **********/
 :root {
+    /* Primary Theme Colors */
     --primary: #0abab5;
     --secondary: #0B2154;
     --light: #F2F2F2;
     --dark: #111111;
+
+    /* Bootstrap Theme Colors */
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+
+    /* Semantic Colors */
+    --bs-primary: var(--primary);
+    --bs-secondary: var(--secondary);
+    --bs-success: var(--bs-green);
+    --bs-info: var(--bs-cyan);
+    --bs-warning: var(--bs-yellow);
+    --bs-danger: var(--bs-red);
+    --bs-light: var(--light);
+    --bs-dark: var(--dark);
+
+    /* Text Colors */
+    --text-primary: #596277;
+    --text-secondary: #6c757d;
+    --text-muted: #6c757d;
+    --text-light: var(--light);
+    --text-dark: var(--dark);
+
+    /* Background Colors */
+    --bg-primary: var(--primary);
+    --bg-secondary: var(--secondary);
+    --bg-light: var(--light);
+    --bg-dark: var(--dark);
+    --bg-white: var(--bs-white);
+    --bg-transparent: transparent;
+
+    /* Border Colors */
+    --border-color: #dee2e6;
+    --border-color-light: #e9ecef;
+    --border-color-dark: #adb5bd;
 }
 
 .fw-medium {
@@ -302,8 +348,8 @@
 
 /*** Facts ***/
 .fact {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/bird-head.png) center center no-repeat;
-    background-size: contain;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/logo-header-image-padding.png) center center no-repeat;
+    background-size: cover;
 }
 
 
@@ -324,7 +370,7 @@
 
 /*** Booking ***/
 .booking {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/bird-bg-left.png) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/logo-header-image.png) center center no-repeat;
     background-size: cover;
 }
 
@@ -419,7 +465,7 @@
 
 /*** Footer ***/
 .footer {
-    background: linear-gradient(rgba(10, 186, 181, .6), rgba(11, 33, 84)), url('../img/bird-bg.png') center center;
+    background: linear-gradient(rgba(10, 186, 181, .6), rgba(11, 33, 84)), url('../img/logo-box-black.png') center center;
     background-size: cover;
 }
 

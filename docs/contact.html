@@ -11,7 +11,10 @@
     <meta name="google" content="nositelinkssearchbox">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon_io/site.webmanifest">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -68,19 +71,19 @@
                         <div class="col-md-4">
                             <div class="bg-light d-flex flex-column justify-content-center p-4">
                                 <h5 class="text-uppercase">// Clinical Services //</h5>
-                                <p class="m-0"><i class="fa fa-envelope-open text-primary me-2"></i>clinical@theicwgroup.com</p>
+                                <p class="m-0"><i class="fa fa-envelope-open text-primary me-2"></i><a href="mailto:clinical@theicwgroup.com">clinical@theicwgroup.com</a></p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="bg-light d-flex flex-column justify-content-center p-4">
                                 <h5 class="text-uppercase">// General Inquiries //</h5>
-                                <p class="m-0"><i class="fa fa-envelope-open text-primary me-2"></i>info@theicwgroup.com</p>
+                                <p class="m-0"><i class="fa fa-envelope-open text-primary me-2"></i><a href="mailto:info@theicwgroup.com">info@theicwgroup.com</a></p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="bg-light d-flex flex-column justify-content-center p-4">
                                 <h5 class="text-uppercase">// Research & Innovation //</h5>
-                                <p class="m-0"><i class="fa fa-envelope-open text-primary me-2"></i>research@theicwgroup.com</p>
+                                <p class="m-0"><i class="fa fa-envelope-open text-primary me-2"></i><a href="mailto:research@theicwgroup.com">research@theicwgroup.com</a></p>
                             </div>
                         </div>
                     </div>
@@ -95,23 +98,23 @@
                 <div class="col-md-6">
                     <div class="wow fadeInUp" data-wow-delay="0.2s">
                         <p class="mb-4">We're here to help! Whether you're interested in our clinical services, modular infrastructure solutions, or research opportunities, our team is ready to assist you. Please fill out the form below and we'll get back to you as soon as possible.</p>
-                        <form>
+                        <form action="https://usebasin.com/f/068aec676224" method="POST" enctype="multipart/form-data" id="form">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
                                         <label for="name">Your Name</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
                                         <label for="email">Your Email</label>
                                     </div>
                                 </div>
-                                <div class="col-12">
+                                <div class="col-md-6">
                                     <div class="form-floating">
-                                        <select class="form-select" id="subject">
+                                        <select class="form-select" id="subject" name="subject" required>
                                             <option value="">Select a Service</option>
                                             <option value="clinical">Clinical Services</option>
                                             <option value="infrastructure">Modular Infrastructure</option>
@@ -123,9 +126,15 @@
                                         <label for="subject">Service Interest</label>
                                     </div>
                                 </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="organization" name="organization" placeholder="Organization Name">
+                                        <label for="organization">Organization Name</label>
+                                    </div>
+                                </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                        <textarea class="form-control" placeholder="Leave a message here" id="message" name="message" style="height: 100px" required></textarea>
                                         <label for="message">Message</label>
                                     </div>
                                 </div>

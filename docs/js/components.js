@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <img src="img/logo-header.png" alt="ICW Logo" height="50">
+            <img src="img/logo-header.png" alt="ICW Logo" height="90">
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -105,12 +105,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
                 <div class="col-lg-3 col-md-6" style="max-width: 300px; margin: 0 auto; padding: 0 25px;">
                     <div class="mb-5">
-                        <h4 class="text-light mb-4">Newsletter</h4>
+                        <h4 class="text-light mb-4">Keep in Touch</h4>
                         <p>Stay updated with our latest news and services.</p>
-                        <div class="position-relative mx-auto" style="max-width: 400px;">
-                            <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                        </div>
+                        <form action="https://usebasin.com/f/068aec676224" method="POST" enctype="multipart/form-data" id="newsletter-form">
+                            <div class="position-relative mx-auto" style="max-width: 400px;">
+                                <input type="hidden" name="form_type" value="newsletter_signup">
+                                <input type="hidden" name="source" value="footer_newsletter">
+                                <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="email" name="email" placeholder="Your email" required>
+                                <button type="submit" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

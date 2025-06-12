@@ -1,8 +1,8 @@
 /********** Template CSS **********/
 :root {
     /* Primary Theme Colors */
-    --primary: #0abab5;
-    --secondary: #0B2154;
+    --primary: #FFCC48;
+    --secondary: #000000;
     --light: #F2F2F2;
     --dark: #111111;
 
@@ -89,7 +89,7 @@
 
 .btn.btn-primary,
 .btn.btn-secondary {
-    color: #FFFFFF;
+    color: #000000;
 }
 
 .btn-square {
@@ -287,7 +287,7 @@
 }
 
 .page-header {
-    background: linear-gradient(135deg, #0B2154 0%, #0abab5 70%, #0B2154 100%);
+    background: linear-gradient(135deg, #000000 0%, #FFCC48 70%, #000000 100%);
     color: white;
     padding: 2px 0;
     position: relative;
@@ -332,7 +332,7 @@
 }
 
 .breadcrumb-item a:hover {
-    color: #ff0000;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -465,7 +465,7 @@
 
 /*** Footer ***/
 .footer {
-    background: linear-gradient(rgba(10, 186, 181, .6), rgba(11, 33, 84)), url('../img/logo-box-black.png') center center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(255, 204, 72, 0.7) 100%), url('../img/logo-image-color-square.png') center center;
     background-size: cover;
 }
 
@@ -535,7 +535,7 @@
 
 /* Carousel header style for animated gradient background */
 .carousel-header-style {
-    background: linear-gradient(135deg, #0B2154 0%, #0abab5 70%, #0B2154 100%);
+    background: linear-gradient(135deg, #000000 0%, #FFCC48 70%, #000000 100%);
     color: white;
     position: relative;
     overflow: hidden;
@@ -565,4 +565,22 @@
     font-weight: 900;
     vertical-align: middle;
     margin-left: 8px;
+}
+
+/* Make team card subtitle text darker */
+.card-subtitle.text-primary {
+    color: #343a40 !important; /* Bootstrap dark gray, or choose another dark color */
+}
+
+.read-more-btn:focus,
+.read-more-btn:active {
+  box-shadow: none !important;
+  outline: none !important;
+  background-color: inherit !important;
+  color: inherit !important;
+}
+
+.bg-light a.text-dark:hover {
+    color: var(--primary) !important;
+    text-decoration: none;
 }

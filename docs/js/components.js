@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const metaGenerator = document.createElement('meta');
     metaGenerator.name = 'generator';
-    metaGenerator.content = 'ICW Group - https://theicwgroup.com';
+    metaGenerator.content = 'ICW Group - https://the-icw.com';
     document.head.appendChild(metaGenerator);
     
     // Embedded header content
@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="nav-item dropdown">
                     <a href="about.html" class="nav-link dropdown-toggle-split">About ICW</a>
                     <div class="dropdown-menu fade-up m-0">
+                        <a href="about.html" class="dropdown-item">About Us</a>
                         <a href="team.html" class="dropdown-item">Leadership</a>
                         <a href="news.html" class="dropdown-item">News & Impact</a>
                         <a href="careers.html" class="dropdown-item">Careers</a>
@@ -52,6 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="nav-item dropdown">
                     <a href="service.html" class="nav-link dropdown-toggle-split">Services</a>
                     <div class="dropdown-menu fade-up m-0">
+                        <a href="service.html" class="dropdown-item">Our Services</a>
                         <a href="research.html" class="dropdown-item">Clinical Research</a>
                         <a href="infrastructure.html" class="dropdown-item">Infrastructure & Engineering</a>
                     </div>
@@ -74,10 +76,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="col-lg-3 col-md-6" style="max-width: 300px; margin: 0 auto; padding: 0 25px;">
                     <div class="mb-5">
                         <h4 class="text-light mb-4">Address</h4>
-                        <p class="mb-2 text-nowrap"><i class="fa fa-map-marker-alt me-3"></i>7205 NW 19th Street, Suite 201</p>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Miami, FL 33126</p>
+                        <p class="mb-2 text-nowrap"><i class="fa fa-map-marker-alt me-3"></i>555 Biltmore Way</p>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Suite 207</p>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Coral Gables, Florida 33134</p>
                         <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>786-882-8346</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@theicwgroup.com</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@the-icw.com</p>
+                        <p class="mb-2"><i class="fa fa-globe me-3"></i>www.the-icw.com</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>

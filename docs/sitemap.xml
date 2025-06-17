@@ -6,70 +6,70 @@
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     
     <url>
-        <loc>https://icw.com/</loc>
+        <loc>https://the-icw.com/</loc>
         <lastmod>2024-03-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     
     <url>
-        <loc>https://icw.com/about.html</loc>
+        <loc>https://the-icw.com/about.html</loc>
         <lastmod>2024-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://icw.com/service.html</loc>
+        <loc>https://the-icw.com/service.html</loc>
         <lastmod>2024-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://icw.com/research.html</loc>
+        <loc>https://the-icw.com/research.html</loc>
         <lastmod>2024-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://icw.com/infrastructure.html</loc>
+        <loc>https://the-icw.com/infrastructure.html</loc>
         <lastmod>2024-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://icw.com/team.html</loc>
+        <loc>https://the-icw.com/team.html</loc>
         <lastmod>2024-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     
     <url>
-        <loc>https://icw.com/news.html</loc>
+        <loc>https://the-icw.com/news.html</loc>
         <lastmod>2024-03-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     
     <url>
-        <loc>https://icw.com/careers.html</loc>
+        <loc>https://the-icw.com/careers.html</loc>
         <lastmod>2024-03-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     
     <url>
-        <loc>https://icw.com/contact.html</loc>
+        <loc>https://the-icw.com/contact.html</loc>
         <lastmod>2024-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     
     <url>
-        <loc>https://icw.com/subsidiaries.html</loc>
+        <loc>https://the-icw.com/subsidiaries.html</loc>
         <lastmod>2024-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>

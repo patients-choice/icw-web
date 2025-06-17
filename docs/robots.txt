@@ -11,4 +11,4 @@ Disallow: /private/
 Disallow: /backup/
 
 # Sitemap location
-Sitemap: https://icw.com/sitemap.xml 
+Sitemap: https://the-icw.com/sitemap.xml 

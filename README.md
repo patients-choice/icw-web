@@ -34,6 +34,15 @@ The website includes the following main pages:
 - Webmaster: [RGE Automation](https://ricknet.com)
 
 ### Business Inquiries
-- Clinical Services: clinical@theicwgroup.com
-- General Inquiries: info@theicwgroup.com
-- Research & Innovation: research@theicwgroup.com 
+- Clinical Services: clinical@the-icw.com
+- General Inquiries: info@the-icw.com
+- Research & Innovation: research@the-icw.com
+
+### Address
+ICW Group
+555 Biltmore Way
+Suite 207
+Coral Gables, Florida 33134
+Phone: 786-882-8346
+Email: info@the-icw.com
+Web: www.the-icw.com 

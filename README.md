@@ -29,7 +29,7 @@ The website includes the following main pages:
 - Contact (`contact.html`)
 
 ## Contributing
-- Refer to the [Contributor Guide](https://github.com/patients-choice/icw-web/blob/main/CONTRIBUTING.md)
+- Refer to the [Contributor Guide](https://github.com/patients-choice/icw-web/blob/main/CONTRIBUTING.md), to make updates to site content
 
 ### Website Support
 - Webmaster: [RGE Automation](https://ricknet.com)

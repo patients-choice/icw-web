@@ -28,7 +28,8 @@ The website includes the following main pages:
 - Careers (`careers.html`)
 - Contact (`contact.html`)
 
-## Contact Information
+## Contributing
+- See the [Contributor Guide](https://github.com/patients-choice/icw-web/blob/main/CONTRIBUTING.md)
 
 ### Website Support
 - Webmaster: [RGE Automation](https://ricknet.com)
